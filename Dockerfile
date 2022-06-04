@@ -9,7 +9,7 @@ LABEL "repository"="https://github.com/mlunax/actions-md-html"
 LABEL "homepage"="https://github.com/mlunax/actions-md-html"
 LABEL "maintainer"="mlunax <lunax@mlunax.com>"
 
-RUN apk add --no-cache python3=3.10.4
+RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python
 
 ADD *.sh /
 ADD *.py /

@@ -2,4 +2,4 @@
 
 set -e
 
-ash -c "python3 convert.py"
+ash -c "python3 /convert.py"
